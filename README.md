@@ -190,10 +190,11 @@ create table itens_do_pedido (
   produto_id int not null references produtos(id)
 );
 ```
+![7](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/d4d236cf-c4dc-48d9-865f-e690c0fb9fd9)
 
 ## 6 Funcionamento
 
-Agora que o banco de dados foi estruturado, precisamos testá-lo para garatir que esteja funcionando corretamente. Para isso, vamos inserir algumas informações ficticias ao bando de dados:
+Agora que o banco de dados foi estruturado, precisamos testá-lo para garantir que esteja funcionando corretamente. Para isso, vamos inserir algumas informações fictícias:
 
 ### 6.1 Inserindo as Categorias:
 
