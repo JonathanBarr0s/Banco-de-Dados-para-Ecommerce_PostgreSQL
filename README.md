@@ -100,7 +100,7 @@ Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos d
 
 ## 5 Estruturação
 
-Nesta etapa, irei mostrar os passos para estruturação do banco de dados e farei algumas observações.
+Nesta etapa, irei mostrar os passos para a estruturação do banco de dados e farei algumas observações.
 
 ### 5.1 Criando a Tabela Clientes
 
@@ -123,7 +123,7 @@ create table categorias (
   nome varchar(50)
 );
 ```
-1. **`(id serial primary key)`**: Defina a primeira coluna da tabela como "id" com o tipo de dado "serial", geralmente usado para criar uma coluna de autoincremento. Isso significa que sempre que um novo registro for adicionado à tabela, não será necessário especificar um valor para a coluna "id"; isso será feito automaticamente. A cláusula "primary key" indica que esta coluna será a chave primária da tabela, o que significa que ela conterá valores únicos que identificarão de forma exclusiva cada registro na tabela.
+1. **`(id serial primary key)`**: Defina a primeira coluna da tabela como "id" com o tipo de dado "serial", geralmente usado para criar uma coluna de autoincremento. Isso significa que sempre que um novo registro for adicionado à tabela, não será necessário especificar um valor para a coluna "id"; isso será feito automaticamente. 
 
 ### 5.3 Criando a Tabela Produtos
 
