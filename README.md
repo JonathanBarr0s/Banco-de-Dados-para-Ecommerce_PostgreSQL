@@ -84,6 +84,20 @@ A tabela pedidos registra o resumo dos pedidos relacionando vendedor e cliente.
 
 ## 4 Instalação
 
+Aqui estão os passos para configurar o ambiente e executar o projeto:
+
+1. **Instale o PostgreSQL:**
+
+    O PostgreSQL é um sistema de banco de dados relacional de código aberto. Você pode baixá-lo em **[postgresql.org](https://www.postgresql.org/download/)**.
+
+2. **Instale o Beekeeper Studio:**
+
+    O Beekeeper Studio é um editor SQL e gerenciador de banco de dados. Você pode baixá-lo em **[beekeeperstudio.io](https://www.beekeeperstudio.io/)**.
+
+Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos em destaques, que foram fornecidos na instalação do PostgreSQL:
+    
+
+
 ## 5 Funcionamento
 
 ## 6. Contribuição
