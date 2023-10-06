@@ -229,6 +229,7 @@ values
   ('Manga', 'Rico em Vitamina A, potássio e vitamina C', 198, 176, 1),
   ('Uva', 'NÃO CONTÉM GLÚTEN.', 420, 90, 1);
 ```
+![9](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/0853644a-bb93-43a2-99a8-32ef6e7e1d77)
 
 ### 6.3 Inserindo os Clientes:
 
