@@ -110,6 +110,8 @@ Um ponto importante é que, antes de criar uma tabela B que possui uma **chave e
 create database ecommerce;
 ```
 
+![1](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/006cb9c5-0f8f-4485-8a81-0d67871a7574)
+
 1. Quando essa consulta é executada, um novo banco de dados vazio chamado "ecommerce" será criado. Esse banco de dados poderá, então, armazenar as tabelas que vamos criar logo abaixo.
 
 ### 5.2 Criando a Tabela Clientes
