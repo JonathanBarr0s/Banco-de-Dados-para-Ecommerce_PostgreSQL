@@ -14,7 +14,7 @@ O código está disponível no arquivo `querry.sql` deste repositório.
 
 O banco de dados foi modelado com base nas necessidades do supermercado virtual e apresenta as seguintes tabelas, com os devidos relacionamentos:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0ce68c8e-9dd9-477b-a9fe-c66e5175566e/130b891a-f3bb-42a1-a2b8-1d3619ec2695/Untitled.png)
+![123](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/74d715e9-2af8-49c1-81d8-921f25b539cd)
 
 ###### *O 1 representa uma chave primária.*
 
