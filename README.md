@@ -33,7 +33,7 @@ Toda tabela poderá possuir uma, e somente uma, chave primária. Essa chave é u
 
 A chave estrangeira é uma referência em uma tabela a uma chave primária de outra tabela. Diferentemente da chave primária, a chave estrangeira:
 
-1. Pode ser nula (NOT NULL);
+1. Pode ser nula;
 2. É um campo em uma tabela que faz referência a um campo que é chave primária em outra tabela;
 3. É possível ter mais de uma (ou nenhuma) em uma tabela.
 
