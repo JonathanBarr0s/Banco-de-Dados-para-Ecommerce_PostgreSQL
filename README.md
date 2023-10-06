@@ -124,7 +124,7 @@ create table categorias (
 );
 ```
 
-### 5.3 Criando a Tabela Categorias
+### 5.3 Criando a Tabela Produtos
 
 ```
 create table produtos (
