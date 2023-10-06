@@ -203,6 +203,7 @@ Agora que o banco de dados foi estruturado, precisamos testá-lo para garantir q
 ```
 insert into categorias (nome) values ('frutas'), ('verduras'), ('massas'), ('bebibas'), ('utilidades');
 ```
+![8](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/bb6c8055-0d8c-47c3-8dab-a454f06dfdb8)
 
 ### 6.2 Inserindo os Produtos:
 
