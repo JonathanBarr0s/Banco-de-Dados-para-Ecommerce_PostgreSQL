@@ -68,7 +68,7 @@ Nessa tabela, são armazenados os dados dos clientes que utilizam o sistema de v
 
 ### 3.4 Vendedores
 
-- **cpf** (Chave Primária, com restrição de não aceitar registros duplicados)
+- **cpf** (Chave Primária)
 - nome
 
 A tabela de vendedores contém informações sobre os vendedores da empresa, incluindo CPF e nome.
