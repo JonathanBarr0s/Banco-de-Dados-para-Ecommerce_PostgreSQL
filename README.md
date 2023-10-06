@@ -102,7 +102,7 @@ Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos d
 
 Nesta etapa, irei mostrar os passos para estruturação do banco de dados.
 
-## 5.1 Criando a Tabela Clientes
+### 5.1 Criando a Tabela Clientes
 
 ```
 create table clientes (
