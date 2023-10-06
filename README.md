@@ -121,17 +121,17 @@ create table clientes (
 
 
 
-## 5 Funcionamento
+## 6 Funcionamento
 
 Agora que o banco de dados foi estruturado, precisamos testá-lo para garatir que esteja funcionando corretamente. Para isso, vamos inserir algumas informações ficticias ao bando de dados:
 
-### 5.1 Inserindo as Categorias:
+### 6.1 Inserindo as Categorias:
 
 ```
 insert into categorias (nome) values ('frutas'), ('verduras'), ('massas'), ('bebibas'), ('utilidades');
 ```
 
-### 5.2 Inserindo os Produtos:
+### 6.2 Inserindo os Produtos:
 
 ```
 insert into produtos (nome, descricao, preco, quantidade_em_estoque, categoria_id)
@@ -156,7 +156,7 @@ values
   ('Uva', 'NÃO CONTÉM GLÚTEN.', 420, 90, 1);
 ```
 
-### 5.3 Inserindo os Clientes:
+### 6.3 Inserindo os Clientes:
 
 ```
 insert into clientes (cpf, nome)
@@ -167,7 +167,7 @@ values
   ('75670505018', 'Maria da Conceição');
 ```
 
-### 5.4 Inserindo os Vendedores:
+### 6.4 Inserindo os Vendedores:
 
 ```
 insert into vendedores (cpf, nome)
@@ -178,7 +178,7 @@ values
 ```
 
 
-## 6. Contribuição
+## 7. Contribuição
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga as etapas abaixo:
 1. Faça um fork do repositório;
 2. Crie uma nova branch: `git checkout -b minha-branch`;
