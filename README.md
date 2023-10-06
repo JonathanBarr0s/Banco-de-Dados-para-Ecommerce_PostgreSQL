@@ -102,6 +102,8 @@ Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos d
 
 Nesta etapa, irei mostrar os passos para a estruturação do banco de dados e farei algumas observações.
 
+Um ponto importante é que, antes de criar uma tabela B que possui uma **chave estrangeira**, é necessário primeiro criar a tabela A que possui a **chave primária** à qual a tabela B irá se referenciar. Isso ocorre porque não é possível criar uma chave estrangeira para uma chave primária de uma tabela que ainda não existe.
+
 ### 5.1 Criando a Tabela Clientes
 
 ```
