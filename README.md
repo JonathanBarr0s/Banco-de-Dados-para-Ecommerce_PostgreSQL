@@ -26,7 +26,7 @@ Toda tabela poderá possuir uma, e somente uma, chave primária. Essa chave é u
 
 1. Chaves primárias **não** podem ser nulas;
 2. Cada registro na tabela deve possuir uma, e somente uma, chave primária;
-3. Normalmente, chaves primárias são incrementadas automaticamente pelo banco de dados, ou seja, não há necessidade de passarmos esse valor em um **[INSERT](http://www.devmedia.com.br/comandos-basicos-em-sql-insert-update-delete-e-select/37170)**. Entretanto, essa é uma opção configurada na criação da base de dados que não é obrigatória. Nos casos em que ela (incremento automático) não é definida, é preciso garantir que não haverá valores repetidos nessa coluna;
+3. Normalmente, chaves primárias são incrementadas automaticamente pelo banco de dados, ou seja, não há necessidade de passarmos esse valor em um INSERT. Entretanto, essa é uma opção configurada na criação da base de dados que não é obrigatória. Nos casos em que ela (incremento automático) não é definida, é preciso garantir que não haverá valores repetidos nessa coluna;
 4. São as chaves para o relacionamento entre entidades ou tabelas da base de dados. Assim haverá na tabela relacionada uma **referência** a essa chave primária (que será, na tabela relacionada, a chave estrangeira).
 
 ### 2.1 Chave Estrangeira
