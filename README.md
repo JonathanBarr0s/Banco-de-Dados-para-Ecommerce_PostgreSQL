@@ -104,7 +104,7 @@ Nesta etapa, irei mostrar os passos para a estruturação do banco de dados e fa
 
 Um ponto importante é que, antes de criar uma tabela B que possui uma **chave estrangeira**, é necessário primeiro criar a tabela A que possui a **chave primária** à qual a tabela B irá se referenciar. Isso ocorre porque não é possível criar uma chave estrangeira para uma chave primária de uma tabela que ainda não existe.
 
-No Beekeeper, a chave primária é ilustrada na cor azul e a chave estrangeira na cor amarela.
+No Beekeeper, a chave primária é ilustrada na cor azul no cabeçalho da coluna, e a chave estrangeira na cor amarela.
 
 ### 5.1 Criando o Banco de Dados
 
