@@ -263,7 +263,7 @@ Agora que o banco de dados está alimentado, é hora de simular algumas vendas.
 insert into pedidos (valor, client_cpf, vendedor_cpf) values (9650, '80371350042', '28007155023');
 ```
 
-2. Com o pedido registrado, podemos inserir os primeiros registros da tabela Itens do Pedido:
+2. Com o pedido registrado, podemos inserir os primeiros registros na tabela Itens do Pedido:
 
 ```
 insert into itens_do_pedido (quantidade, pedido_id, produto_id)
