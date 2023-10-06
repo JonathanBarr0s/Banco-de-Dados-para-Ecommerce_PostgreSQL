@@ -122,6 +122,7 @@ create table clientes (
   nome varchar(150)
 );
 ```
+![2](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/2a85c029-b29c-4bd6-a1ca-bb96e0af5da8)
 
 1. **`create table clientes`**: Esta parte da consulta indica que estamos criando uma nova tabela chamada "clientes".
 2. **`( cpf char(11) primary key,`**: Aqui, estamos definindo a primeira coluna da tabela chamada "cpf". O tipo de dados da coluna é "char(11)", o que significa que ela armazenará caracteres (letras ou números) com um comprimento fixo de 11 caracteres. Além disso, estamos especificando que esta coluna é a chave primária.
