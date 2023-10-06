@@ -123,7 +123,7 @@ create table categorias (
   nome varchar(50)
 );
 ```
-1. **`(id serial primary key)`**: Define a primeira coluna da tabela chamada "id" como um tipo de dados "serial", que geralmente é usado para criar uma coluna de autoincremento, isso singifica que sempre que um novo registro for adicionado na tabela, não será necessário expecificar um valor para a coluna "id", isso será feito automaticamente. A cláusula "primary key" indica que esta coluna será a chave primária da tabela, o que significa que ela conterá valores únicos que identificam de forma exclusiva cada registro na tabela.
+1. **`(id serial primary key)`**: Defina a primeira coluna da tabela como "id" com o tipo de dado "serial", geralmente usado para criar uma coluna de autoincremento. Isso significa que sempre que um novo registro for adicionado à tabela, não será necessário especificar um valor para a coluna "id"; isso será feito automaticamente. A cláusula "primary key" indica que esta coluna será a chave primária da tabela, o que significa que ela conterá valores únicos que identificarão de forma exclusiva cada registro na tabela.
 
 ### 5.3 Criando a Tabela Produtos
 
