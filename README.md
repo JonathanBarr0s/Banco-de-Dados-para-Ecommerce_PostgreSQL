@@ -205,6 +205,10 @@ insert into categorias (nome) values ('frutas'), ('verduras'), ('massas'), ('beb
 ```
 ![8](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/bb6c8055-0d8c-47c3-8dab-a454f06dfdb8)
 
+1. **`insert into categorias`**: Isso indica que vamos inserir dados na tabela "categorias".
+2. **`(nome)`**: Esta parte entre parênteses especifica a lista de colunas nas quais vamos inserir valores. Neste caso, vamos inserir valores apenas na coluna "nome".
+3. **`values ('frutas'), ('verduras'), ('massas'), ('bebidas'), ('utilidades');`**: Esta é a lista de valores que serão inseridos na coluna "nome" da tabela "categorias". 
+
 ### 6.2 Inserindo os Produtos:
 
 ```
