@@ -166,6 +166,7 @@ create table vendedores (
   nome varchar(150)
 );
 ```
+![5](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/2515b16b-c37a-4474-8a20-da90c31b2226)
 
 ### 5.6 Criando a Tabela Pedidos
 
