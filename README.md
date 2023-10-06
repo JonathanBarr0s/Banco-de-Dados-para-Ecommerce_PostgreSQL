@@ -141,6 +141,37 @@ create table produtos (
 2. **`preco int`**: Define uma quarta coluna chamada "preco" com o tipo de dados "int", que é usado para armazenar valores inteiros.
 3. **`categoria_id int not null references categorias(id)`**: Define uma sexta coluna chamada "categoria_id" com o tipo de dados "int". A cláusula "not null" indica que esta coluna não pode conter valores nulos. A parte "references categorias(id)" estabelece uma restrição de chave estrangeira, que vincula a coluna "categoria_id" à coluna "id" de outra tabela chamada "categorias". Isso significa que cada produto deve estar associado a uma categoria existente na tabela "categorias".
 
+### 5.4 Criando a Tabela Vendedores
+
+```
+create table vendedores (
+  cpf char(11) primary key,
+  nome varchar(150)
+);
+```
+
+### 5.5 Criando a Tabela Pedidos
+
+```
+create table pedidos (
+  id serial primary key,
+  valor int,
+  client_cpf char(11) not null references clientes(cpf),
+  vendedor_cpf char(11) not null references vendedores(cpf)
+);
+```
+
+### 5.4 Criando a Tabela Itens do Pedido
+
+```
+create table itens_do_pedido (
+ id serial primary key,
+  pedido_id int not null references pedidos(id),
+  quantidade int,
+  produto_id int not null references produtos(id)
+);
+```
+
 ## 6 Funcionamento
 
 Agora que o banco de dados foi estruturado, precisamos testá-lo para garatir que esteja funcionando corretamente. Para isso, vamos inserir algumas informações ficticias ao bando de dados:
