@@ -178,6 +178,7 @@ create table pedidos (
   vendedor_cpf char(11) not null references vendedores(cpf)
 );
 ```
+![6](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/cc5bf3ff-0648-424b-b626-ea87bfe98f13)
 
 ### 5.7 Criando a Tabela Itens do Pedido
 
