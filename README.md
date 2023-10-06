@@ -152,6 +152,8 @@ create table produtos (
   categoria_id int not null references categorias(id)
 );
 ```
+![4](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/b7a19f0c-be52-4db4-be22-cf4235cb0aa4)
+
 1. **`descricao text`**: Define uma terceira coluna chamada "descricao" com o tipo de dados "text", que é usado para armazenar texto longo, como descrições de produtos.
 2. **`preco int`**: Define uma quarta coluna chamada "preco" com o tipo de dados "int", que é usado para armazenar valores inteiros.
 3. **`categoria_id int not null references categorias(id)`**: Define uma sexta coluna chamada "categoria_id" com o tipo de dados "int". A cláusula "not null" indica que esta coluna não pode conter valores nulos. A parte "references categorias(id)" estabelece uma restrição de chave estrangeira, que vincula a coluna "categoria_id" à coluna "id" de outra tabela chamada "categorias". Isso significa que cada produto deve estar associado a uma categoria existente na tabela "categorias".
