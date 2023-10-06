@@ -251,9 +251,45 @@ values
   ('23262546003', 'Beatriz Souza Santos'),
   ('28007155023', 'Carlos Eduardo');
 ```
+## 7. Registrando Pedidos
 
+Agora que o banco de dados está alimentado, é hora de simular algumas vendas.
 
-## 7. Contribuição
+### 7.1 Inserindo o Primeiro Registro:
+
+1. Primeiro, vamos registrar o pedido na tabela Pedidos:
+
+```
+insert into pedidos (valor, client_cpf, vendedor_cpf) values (9650, '80371350042', '28007155023');
+```
+
+2. Com o pedido registrado, podemos inserir os primeiros registros da tabela Itens do Pedido:
+
+```
+insert into itens_do_pedido (quantidade, pedido_id, produto_id)
+values
+(1, 1, 1),
+(1, 1, 10),
+(6, 1, 11),
+(1, 1, 15),
+(5, 1, 2);
+```
+
+3. Após concluir a venda, precisamos atualizar o estoque:
+
+```
+update produtos set quantidade_em_estoque = quantidade_em_estoque - 1 where id = 10;
+
+update produtos set quantidade_em_estoque = quantidade_em_estoque - 1 where id = 1;
+
+update produtos set quantidade_em_estoque = quantidade_em_estoque - 5 where id = 2;
+
+update produtos set quantidade_em_estoque = quantidade_em_estoque - 1 where id = 15;
+
+update produtos set quantidade_em_estoque = quantidade_em_estoque - 6 where id = 11;
+```
+
+## 8. Contribuição
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga as etapas abaixo:
 1. Faça um fork do repositório;
 2. Crie uma nova branch: `git checkout -b minha-branch`;
