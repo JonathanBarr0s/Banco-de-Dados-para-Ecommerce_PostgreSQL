@@ -104,7 +104,15 @@ Nesta etapa, irei mostrar os passos para a estruturação do banco de dados e fa
 
 Um ponto importante é que, antes de criar uma tabela B que possui uma **chave estrangeira**, é necessário primeiro criar a tabela A que possui a **chave primária** à qual a tabela B irá se referenciar. Isso ocorre porque não é possível criar uma chave estrangeira para uma chave primária de uma tabela que ainda não existe.
 
-### 5.1 Criando a Tabela Clientes
+### 5.1 Criando o Banco de Dados
+
+```
+create database ecommerce;
+```
+
+1. Quando essa consulta é executada, um novo banco de dados vazio chamado "ecommerce" será criado. Esse banco de dados poderá, então, armazenar tabelas que vamos criar logo abaixo.
+
+### 5.2 Criando a Tabela Clientes
 
 ```
 create table clientes (
@@ -117,7 +125,7 @@ create table clientes (
 2. **`( cpf char(11) primary key,`**: Aqui, estamos definindo a primeira coluna da tabela chamada "cpf". O tipo de dados da coluna é "char(11)", o que significa que ela armazenará caracteres (letras ou números) com um comprimento fixo de 11 caracteres. Além disso, estamos especificando que esta coluna é a chave primária.
 3. **`nome varchar(150)`** : Aqui, estamos definindo a segunda coluna da tabela chamada "nome". O tipo de dados da coluna é "varchar(150)", que é usado para armazenar uma sequência de caracteres com um comprimento máximo de 150 caracteres.
 
-### 5.2 Criando a Tabela Categorias
+### 5.3 Criando a Tabela Categorias
 
 ```
 create table categorias (
@@ -127,7 +135,7 @@ create table categorias (
 ```
 1. **`(id serial primary key)`**: Defina a primeira coluna da tabela como "id" com o tipo de dado "serial", geralmente usado para criar uma coluna de autoincremento. Isso significa que sempre que um novo registro for adicionado à tabela, não será necessário especificar um valor para a coluna "id"; isso será feito automaticamente. 
 
-### 5.3 Criando a Tabela Produtos
+### 5.4 Criando a Tabela Produtos
 
 ```
 create table produtos (
@@ -143,7 +151,7 @@ create table produtos (
 2. **`preco int`**: Define uma quarta coluna chamada "preco" com o tipo de dados "int", que é usado para armazenar valores inteiros.
 3. **`categoria_id int not null references categorias(id)`**: Define uma sexta coluna chamada "categoria_id" com o tipo de dados "int". A cláusula "not null" indica que esta coluna não pode conter valores nulos. A parte "references categorias(id)" estabelece uma restrição de chave estrangeira, que vincula a coluna "categoria_id" à coluna "id" de outra tabela chamada "categorias". Isso significa que cada produto deve estar associado a uma categoria existente na tabela "categorias".
 
-### 5.4 Criando a Tabela Vendedores
+### 5.5 Criando a Tabela Vendedores
 
 ```
 create table vendedores (
@@ -152,7 +160,7 @@ create table vendedores (
 );
 ```
 
-### 5.5 Criando a Tabela Pedidos
+### 5.6 Criando a Tabela Pedidos
 
 ```
 create table pedidos (
@@ -163,7 +171,7 @@ create table pedidos (
 );
 ```
 
-### 5.4 Criando a Tabela Itens do Pedido
+### 5.7 Criando a Tabela Itens do Pedido
 
 ```
 create table itens_do_pedido (
