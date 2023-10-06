@@ -295,6 +295,10 @@ update produtos set quantidade_em_estoque = quantidade_em_estoque - 1 where id =
 update produtos set quantidade_em_estoque = quantidade_em_estoque - 6 where id = 11;
 ```
 
+1. **`update produtos`**: Isso indica que vamos executar uma operação de atualização na tabela "produtos".
+2. **`set quantidade_em_estoque = quantidade_em_estoque - 1`**: Esta parte da consulta especifica a atualização que será feita. Ela está diminuindo a coluna "quantidade_em_estoque" em 1 unidade. 
+3. **`where id = 10;`**: O "where" é usado para definir uma condição para a atualização. Neste caso, a atualização só ocorrerá se a coluna "id" for igual a 10. Isso significa que somente o registro com "id" igual a 10 terá sua quantidade em estoque diminuída em 1. 
+
 ## 8. Contribuição
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga as etapas abaixo:
 1. Faça um fork do repositório;
