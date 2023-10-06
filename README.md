@@ -255,7 +255,7 @@ values
 
 Agora que o banco de dados está alimentado, é hora de simular algumas vendas.
 
-As ações abaixo serão realizadas de forma automática pelo próprio sistema, mas para fins de teste, vamos criar alguns registros fictícias:
+As ações abaixo serão realizadas de forma automática pelo próprio sistema, mas para fins de teste, vamos criar alguns registros fictícios:
 
 ### 7.1 Inserindo o Primeiro Registro:
 
