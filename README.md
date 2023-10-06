@@ -98,6 +98,29 @@ Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos d
     
 ![123](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/562eaf5f-3658-436e-aa9e-bbc264914894)
 
+## 5 Estruturação
+
+Nesta etapa, irei mostrar os passos para estruturação do banco de dados.
+
+## 5.1 Criando a Tabela Clientes
+
+```
+create table clientes (
+  cpf char(11) primary key,
+  nome varchar(150)
+);
+```
+
+1. **`create table clientes`**: Esta parte da consulta indica que estamos criando uma nova tabela chamada "clientes".
+2. **`( cpf char(11) primary key,`**: Aqui, estamos definindo a primeira coluna da tabela chamada "cpf". O tipo de dados da coluna é "char(11)", o que significa que ela armazenará caracteres (letras ou números) com um comprimento fixo de 11 caracteres. Além disso, estamos especificando que esta coluna é a chave primária.
+3. **`nome varchar(150)`** : Aqui, estamos definindo a segunda coluna da tabela chamada "nome". O tipo de dados da coluna é "varchar(150)", que é usado para armazenar uma sequência de caracteres com um comprimento máximo de 150 caracteres.
+
+
+
+
+
+
+
 ## 5 Funcionamento
 
 Agora que o banco de dados foi estruturado, precisamos testá-lo para garatir que esteja funcionando corretamente. Para isso, vamos inserir algumas informações ficticias ao bando de dados:
