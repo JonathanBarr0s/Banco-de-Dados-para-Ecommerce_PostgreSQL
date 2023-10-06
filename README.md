@@ -136,6 +136,8 @@ create table categorias (
   nome varchar(50)
 );
 ```
+![3](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/46332f02-27b8-487c-9eb3-635d62f6521c)
+
 1. **`(id serial primary key)`**: Defina a primeira coluna da tabela como "id" com o tipo de dado "serial", geralmente usado para criar uma coluna de autoincremento. Isso significa que sempre que um novo registro for adicionado à tabela, não será necessário especificar um valor para a coluna "id"; isso será feito automaticamente. 
 
 ### 5.4 Criando a Tabela Produtos
