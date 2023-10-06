@@ -255,6 +255,8 @@ values
 
 Agora que o banco de dados está alimentado, é hora de simular algumas vendas.
 
+As ações abaixo serão realizadas de forma automática pelo próprio sistema, mas para fins de teste, vamos criar alguns registros fictícias:
+
 ### 7.1 Inserindo o Primeiro Registro:
 
 1. Primeiro, vamos registrar o pedido na tabela Pedidos:
