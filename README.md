@@ -110,7 +110,7 @@ Um ponto importante é que, antes de criar uma tabela B que possui uma **chave e
 create database ecommerce;
 ```
 
-1. Quando essa consulta é executada, um novo banco de dados vazio chamado "ecommerce" será criado. Esse banco de dados poderá, então, armazenar tabelas que vamos criar logo abaixo.
+1. Quando essa consulta é executada, um novo banco de dados vazio chamado "ecommerce" será criado. Esse banco de dados poderá, então, armazenar as tabelas que vamos criar logo abaixo.
 
 ### 5.2 Criando a Tabela Clientes
 
