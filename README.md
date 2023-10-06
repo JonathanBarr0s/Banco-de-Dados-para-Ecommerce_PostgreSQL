@@ -61,7 +61,7 @@ A tabela de produtos contém informações detalhadas sobre cada item disponíve
 
 ### 3.3 Clientes
 
-- **cpf** (Chave Primária, com restrição de não aceitar registros duplicados)
+- **cpf** (Chave Primária)
 - nome
 
 Nessa tabela, são armazenados os dados dos clientes que utilizam o sistema de vendas online, incluindo CPF e nome.
