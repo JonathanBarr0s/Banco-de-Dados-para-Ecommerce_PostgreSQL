@@ -94,9 +94,9 @@ Aqui estão os passos para configurar o ambiente e executar o projeto:
 
     O Beekeeper Studio é um editor SQL e gerenciador de banco de dados. Você pode baixá-lo em **[beekeeperstudio.io](https://www.beekeeperstudio.io/)**.
 
-Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos em destaques, que foram fornecidos na instalação do PostgreSQL:
+Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos destacados, que foram fornecidos durante a instalação do PostgreSQL:
     
-
+![123](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/562eaf5f-3658-436e-aa9e-bbc264914894)
 
 ## 5 Funcionamento
 
