@@ -100,7 +100,7 @@ Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos d
 
 ## 5 Estruturação
 
-Nesta etapa, irei mostrar os passos para estruturação do banco de dados.
+Nesta etapa, irei mostrar os passos para estruturação do banco de dados e farei algumas observações.
 
 ### 5.1 Criando a Tabela Clientes
 
@@ -115,11 +115,30 @@ create table clientes (
 2. **`( cpf char(11) primary key,`**: Aqui, estamos definindo a primeira coluna da tabela chamada "cpf". O tipo de dados da coluna é "char(11)", o que significa que ela armazenará caracteres (letras ou números) com um comprimento fixo de 11 caracteres. Além disso, estamos especificando que esta coluna é a chave primária.
 3. **`nome varchar(150)`** : Aqui, estamos definindo a segunda coluna da tabela chamada "nome". O tipo de dados da coluna é "varchar(150)", que é usado para armazenar uma sequência de caracteres com um comprimento máximo de 150 caracteres.
 
+### 5.2 Criando a Tabela Categorias
 
+```
+create table categorias (
+  id serial primary key,
+  nome varchar(50)
+);
+```
 
+### 5.3 Criando a Tabela Categorias
 
-
-
+```
+create table produtos (
+  id serial primary key,
+  nome varchar(100),
+  descricao text,
+  preco int,
+  quantidade_em_estoque int,
+  categoria_id int not null references categorias(id)
+);
+```
+1. **`descricao text`**: Define uma terceira coluna chamada "descricao" com o tipo de dados "text", que é usado para armazenar texto longo, como descrições de produtos.
+2. **`preco int`**: Define uma quarta coluna chamada "preco" com o tipo de dados "int", que é usado para armazenar valores inteiros.
+3. **`categoria_id int not null references categorias(id)`**: Define uma sexta coluna chamada "categoria_id" com o tipo de dados "int". A cláusula "not null" indica que esta coluna não pode conter valores nulos. A parte "references categorias(id)" estabelece uma restrição de chave estrangeira, que vincula a coluna "categoria_id" à coluna "id" de outra tabela chamada "categorias". Isso significa que cada produto deve estar associado a uma categoria existente na tabela "categorias".
 
 ## 6 Funcionamento
 
