@@ -14,7 +14,7 @@ O código está disponível no arquivo `querry.sql` deste repositório.
 
 O banco de dados foi modelado com base nas necessidades do supermercado virtual e apresenta as seguintes tabelas, com os devidos relacionamentos:
 
-![123](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/74d715e9-2af8-49c1-81d8-921f25b539cd)
+![Tabela](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/78abfe61-8b05-4c52-a97d-e54b50526373)
 
 ###### *O 1 representa uma chave primária.*
 
@@ -112,7 +112,7 @@ No Beekeeper, a chave primária é ilustrada na cor azul, no cabeçalho da colun
 create database ecommerce;
 ```
 
-![1](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/006cb9c5-0f8f-4485-8a81-0d67871a7574)
+![1](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/7ab29847-7c48-47b2-8d7e-cd0e04eb15d9)
 
 1. Quando essa consulta é executada, um novo banco de dados vazio chamado "ecommerce" será criado. Esse banco de dados poderá, então, armazenar as tabelas que vamos criar logo abaixo.
 
@@ -124,7 +124,7 @@ create table clientes (
   nome varchar(150)
 );
 ```
-![2](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/2a85c029-b29c-4bd6-a1ca-bb96e0af5da8)
+![2](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/5bdbeb9e-f9de-4eda-a17b-491ce431eaa4)
 
 1. **`create table clientes`**: Esta parte da consulta indica que estamos criando uma nova tabela chamada "clientes".
 2. **`( cpf char(11) primary key,`**: Aqui, estamos definindo a primeira coluna da tabela chamada "cpf". O tipo de dados da coluna é "char(11)", o que significa que ela armazenará caracteres (letras ou números) com um comprimento fixo de 11 caracteres. Além disso, estamos especificando que esta coluna é a chave primária.
@@ -138,7 +138,7 @@ create table categorias (
   nome varchar(50)
 );
 ```
-![3](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/46332f02-27b8-487c-9eb3-635d62f6521c)
+![3](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/0fd5d2f5-1d84-48c6-bd58-8614e90fa850)
 
 1. **`(id serial primary key)`**: Defina a primeira coluna da tabela como "id" com o tipo de dado "serial", geralmente usado para criar uma coluna de autoincremento. Isso significa que sempre que um novo registro for adicionado à tabela, não será necessário especificar um valor para a coluna "id"; isso será feito automaticamente. 
 
@@ -154,7 +154,7 @@ create table produtos (
   categoria_id int not null references categorias(id)
 );
 ```
-![4](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/b7a19f0c-be52-4db4-be22-cf4235cb0aa4)
+![4](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/d15b5302-0335-4197-9f72-8f186fd915f3)
 
 1. **`descricao text`**: Define uma terceira coluna chamada "descricao" com o tipo de dados "text", que é usado para armazenar texto longo, como descrições de produtos.
 2. **`preco int`**: Define uma quarta coluna chamada "preco" com o tipo de dados "int", que é usado para armazenar valores inteiros.
@@ -168,7 +168,7 @@ create table vendedores (
   nome varchar(150)
 );
 ```
-![5](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/2515b16b-c37a-4474-8a20-da90c31b2226)
+![5](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/d8260573-30df-47b5-939b-ceba40edaf97)
 
 ### 5.6 Criando a Tabela Pedidos
 
@@ -180,7 +180,7 @@ create table pedidos (
   vendedor_cpf char(11) not null references vendedores(cpf)
 );
 ```
-![6](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/cc5bf3ff-0648-424b-b626-ea87bfe98f13)
+![6](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/258714c1-2626-4baa-9798-71a3e04bc3eb)
 
 ### 5.7 Criando a Tabela Itens do Pedido
 
@@ -192,7 +192,7 @@ create table itens_do_pedido (
   produto_id int not null references produtos(id)
 );
 ```
-![7](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/d4d236cf-c4dc-48d9-865f-e690c0fb9fd9)
+![7](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/dd302bd4-8484-4e9a-8993-5e8afb60e12b)
 
 ## 6 Funcionamento
 
@@ -203,7 +203,7 @@ Agora que o banco de dados foi estruturado, precisamos testá-lo para garantir q
 ```
 insert into categorias (nome) values ('frutas'), ('verduras'), ('massas'), ('bebibas'), ('utilidades');
 ```
-![8](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/bb6c8055-0d8c-47c3-8dab-a454f06dfdb8)
+![8](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/f7308dc3-8816-47fe-b486-95d46ae7cfff)
 
 1. **`insert into categorias`**: Isso indica que vamos inserir dados na tabela "categorias".
 2. **`(nome)`**: Esta parte entre parênteses especifica a lista de colunas nas quais vamos inserir valores. Neste caso, vamos inserir valores apenas na coluna "nome".
@@ -233,7 +233,7 @@ values
   ('Manga', 'Rico em Vitamina A, potássio e vitamina C', 198, 176, 1),
   ('Uva', 'NÃO CONTÉM GLÚTEN.', 420, 90, 1);
 ```
-![9](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/0853644a-bb93-43a2-99a8-32ef6e7e1d77)
+![9](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/ca2ea841-9f8a-4556-84cf-abbe99510d43)
 
 ### 6.3 Inserindo os Clientes:
 
@@ -245,7 +245,7 @@ values
   ('63193310034', 'Ana Rodrigues'),
   ('75670505018', 'Maria da Conceição');
 ```
-![10](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/f9ab7fed-c931-499c-bd2d-af68ed89df67)
+![10](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/486a2b64-50af-4c7b-8911-6c60675011a6)
 
 ### 6.4 Inserindo os Vendedores:
 
@@ -256,7 +256,7 @@ values
   ('23262546003', 'Beatriz Souza Santos'),
   ('28007155023', 'Carlos Eduardo');
 ```
-![11](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/93983372-3ac5-4ec7-9a39-155420a3ebf0)
+![11](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/f443909e-1678-4e79-8026-771ba0edb00e)
 
 ## 7. Registrando Pedidos
 
