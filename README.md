@@ -245,6 +245,7 @@ values
   ('63193310034', 'Ana Rodrigues'),
   ('75670505018', 'Maria da Conceição');
 ```
+![10](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/f9ab7fed-c931-499c-bd2d-af68ed89df67)
 
 ### 6.4 Inserindo os Vendedores:
 
