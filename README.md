@@ -96,7 +96,7 @@ Aqui estão os passos para configurar o ambiente e executar o projeto:
 
 Ao abrir o Beekeeper, será necessário informar o usuário e senha nos campos destacados, que foram fornecidos durante a instalação do PostgreSQL:
     
-![123](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/562eaf5f-3658-436e-aa9e-bbc264914894)
+![Captura de tela 2023-10-09 133233](https://github.com/JonathanBarr0s/Banco-de-Dados-para-Ecommerce_PostgreSQL/assets/132490863/e97f0507-5b49-44f5-bfe8-1a49e27b1931)
 
 ## 5 Estruturação
 
