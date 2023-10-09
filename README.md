@@ -256,6 +256,8 @@ values
   ('23262546003', 'Beatriz Souza Santos'),
   ('28007155023', 'Carlos Eduardo');
 ```
+![11](https://github.com/JonathanBarr0s/PostgreSQL/assets/132490863/93983372-3ac5-4ec7-9a39-155420a3ebf0)
+
 ## 7. Registrando Pedidos
 
 Agora que o banco de dados está alimentado, é hora de simular algumas vendas.
